@@ -11,114 +11,90 @@
 
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/istockphoto-950434234-612x612.jpg) center/cover no-repeat;
+}
 
+.titulo_nav h1 {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    border-top: 5px double whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 90%;
+}
+.titulo_nav p {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+}
+.navegador button {
+    color: rgb(145, 141, 141);
+}
+
+.img_nav {
+    width: 100%;
+    margin-top: 10px;
+    object-fit: contain;
+}
+.img_nav:hover {
+    transform: translate(1px, 1px);
+    border: outset yellow;
+}
+.navegador a:hover {
+    transform: translate(5px, 5px);
+    color: yellow;
 }
 
 @media only screen and (max-width:600px) {
-
     .header {
         display: grid;
         grid-template-columns: 30% 70%;
-        grid-template-rows: 30%;
-        grid-template-areas: "1 2";
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas: "1"
+                             "2"
+                             "3"
+                             "4";
         border-bottom: 5px double rgb(15, 15, 124);
         justify-content: center;
         height: 260px;
-
     }
-
     .img_nav {
         grid-area: 1;
-        width: 100%;
-        margin-top: 10px;
-        object-fit: contain;
-
     }
-
     .titulo_nav h1 {
         grid-area: 2;
-        text-align: center;
-        color: white;
-        font-size: 30px;
-        margin-top: 10px;
-        border-top: 5px double whitesmoke;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        width: 90%;
     }
-
     .titulo_nav p {
         grid-area: 2;
-        color: white;
-        text-align: center;
-        font-size: 15px;
-        margin-top: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        width: 90%;
     }
-
-    .navegador button {
-        color: rgb(145, 141, 141);
-
-    }
-
 }
 
 @media only screen and (min-width:600px) {
-
     .header {
-
         display: grid;
         grid-template-columns: 20% 80%;
         grid-auto-rows: 80%;
         grid-template-areas: "1 2";
-
         border-bottom: 5px double rgb(15, 15, 124);
         justify-content: center;
         height: 250px;
     }
-
     .img_nav {
         grid-area: 1;
-        margin-top: 10px;
-        width: 100%;
     }
-
-    .img_nav:hover {
-        transform: translate(1px, 1px);
-        border: outset yellow;
-
-    }
-
     .titulo_nav h1 {
         grid-area: 2;
-        text-align: center;
-        color: white;
         font-size: 41px;
-        margin-top: 10px;
-        border-top: 5px double whitesmoke;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
     }
-
     .titulo_nav p {
         grid-area: 2;
-        margin-top: 30px;
-        color: white;
-        text-align: center;
         font-size: 28px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-
     .navegador a {
         color: whitesmoke;
         font-size: 25px;
         justify-items: center;
-
-    }
-
-    .navegador a:hover {
-        transform: translate(5px, 5px);
-        color: yellow;
     }
 }
 
@@ -159,8 +135,6 @@ footer {
         color: yellow;
         transform: rotate(5deg);
     }
-
-
 }
 
 /***************************INDEX*****************************/
@@ -169,15 +143,14 @@ footer {
     .main {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 40% 20% 20% 20%;
+        grid-template-rows: 25% 20% 30% 30%;
         grid-template-areas: "1"
             "2"
             "3"
             "4";
-        height: 1000px;
+        height: 1200px;
         justify-items: center;
     }
-
     .main h2 {
         grid-area: 1;
         font-size: 18px;
@@ -187,7 +160,6 @@ footer {
         margin-bottom: 10px;
         font-weight: bold;
         width: 95%;
-
     }
 
     .main p {
@@ -198,7 +170,6 @@ footer {
         text-align: justify;
         margin: 5px 30px 10px 10px;
         width: 90%;
-
     }
 
     .main iframe {
@@ -221,7 +192,6 @@ footer {
         margin-left: 20px;
         box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.48);
     }
-
 }
 
 @media only screen and (min-width:600px) {
@@ -328,7 +298,7 @@ footer {
 
     .contacto_h2 {
         color: rgb(14, 14, 14);
-        font-size: 25px;
+        font-size: 28px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
         font-weight: bold;
@@ -338,7 +308,6 @@ footer {
     .contacto input:focus {
         background-color: rgb(191, 247, 197);
         transition: all 3s;
-
 
     }
 
@@ -368,19 +337,15 @@ footer {
         grid-area: 3;
 
     }
-
     .mapa {
         grid-area: 4;
 
-
     }
-
     .contacto p {
         text-align: center;
         font-size: 25px;
         font-weight: bold;
     }
-
     .contacto button:hover {
         transform: translate(5px, 5px);
         background-color: yellow;
@@ -388,14 +353,12 @@ footer {
         font-weight: bold;
     }
 
-
 }
 
 /*-********************************NOSOTROS************************-*/
 
 @media only screen and (max-width:600px) {
     .div_main_nos {
-
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 18% 18% 18% 18% 28%;
@@ -427,14 +390,12 @@ footer {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         width: 90%;
     }
-
 }
 
 
 @media only screen and (min-width:600px) {
 
     .div_nos {
-
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 20% 25% 20% 35%;
@@ -456,34 +417,28 @@ footer {
     .mision {
         grid-area: a2;
         width: 95%;
-
     }
 
     .vision {
         grid-area: a3;
         width: 90%;
-
     }
 
     .consul {
         grid-area: a4;
         width: 95%;
-
     }
 
     .carrusel {
         grid-area: a5;
         width: 50%;
     }
-
     .div_nos p {
         line-height: 1.6;
         font-size: 16px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: justify;
-
     }
-
     .div_nos h2 {
         font-size: 25px;
         margin-top: 10px;
@@ -498,8 +453,6 @@ footer {
         color: green;
     }
 
-
-
 }
 
 /*--------------------------------SERVICIOS.HTML-----------------*/
@@ -508,7 +461,6 @@ footer {
         width: 90%;
         margin-left: 5px;
     }
-
     .servcios_generales p {
         width: 90%;
         text-align: justify;
@@ -568,21 +520,15 @@ footer {
         grid-area: c;
 
     }
-
     .servicios_4 {
         grid-area: d;
-
     }
-
     .servicios_5 {
         grid-area: e;
-
     }
-
     .servicios_6 {
         grid-area: f;
     }
-
     .servcios_generales a:hover {
         transform: translate(5px, 5px);
         background-color: yellow;
@@ -592,6 +538,7 @@ footer {
 }
 
 /*------------------------------GALERIA.HTML----------------------*/
+
 @media only screen and (max-width:600px) {
     .imagenes h3 {
         text-align: center;
@@ -599,7 +546,6 @@ footer {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-top: 10px;
         width: 90%;
-
     }
 
     .imagenes p {
@@ -612,9 +558,6 @@ footer {
     }
 
 }
-
-
-
 
 @media only screen and (min-width:600px) {
 
